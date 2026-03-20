@@ -1,9 +1,18 @@
+# [build]
+#   publish = "dist/url-shortener/browser"
+#   command = "ng build"
+  
+
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200
+
 [build]
   publish = "dist/url-shortener/browser"
-  command = "ng build"
-  
+  command = "ng build --prod"
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/index.csr.html"
   status = 200
