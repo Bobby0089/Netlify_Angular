@@ -13,7 +13,7 @@ import { GenerateShortUrlService } from '../service/generate-short-url.service';
 })
 export class MyPlansComponent implements OnInit {
 
-  Api: string = 'http://localhost:8080/urlapp/buyplan/viewplan';
+  Api: string = 'https://railwaydev-production-df24.up.railway.app/urlapp/buyplan/viewplan';
   planArray: any[] = [];
   username: string | null = null;
   userDetails: any = {};
