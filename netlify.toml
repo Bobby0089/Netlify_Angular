@@ -1,5 +1,5 @@
 [build]
-  publish = "dist/url-shortener"
+  publish = "dist/url-shortener/browser"
   command = "ng build"
   
 
