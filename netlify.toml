@@ -9,7 +9,7 @@
 #   status = 200
 
 [build]
-  publish = "build"
+  publish = "dist/url-shortener/browser"
   command = "ng build"
   base = "/"
 
