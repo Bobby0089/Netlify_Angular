@@ -9,10 +9,11 @@
 #   status = 200
 
 [build]
-  publish = "dist/url-shortener/browser"
+  publish = "build"
   command = "ng build"
+  base = "/"
 
 [[redirects]]
   from = "/*"
-  to = "/index.csr.html"
+  to = "/index.html"
   status = 200
