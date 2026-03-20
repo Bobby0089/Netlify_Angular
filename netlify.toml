@@ -10,7 +10,7 @@
 
 [build]
   publish = "dist/url-shortener/browser"
-  command = "ng build --prod"
+  command = "ng build"
 
 [[redirects]]
   from = "/*"
