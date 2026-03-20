@@ -14,6 +14,6 @@ export class RedirectUrlService {
   const headers = {
     Authorization: `Bearer ${token}`
   };
-    return this.http.get<any>(`http://localhost:8080/urlapp/urlclick/${url}`,{ headers });
+    return this.http.get<any>(`https://railwaydev-production-df24.up.railway.app/urlapp/urlclick/${url}`,{ headers });
   }
 }
