@@ -22,7 +22,7 @@ export class GenerateShortUrlService {
   const headers = {
     Authorization: `Bearer ${token}`
   };
-    return this.http.get<any[]>(`http://localhost:8080/urlapp/buyplan/viewplan/${userId}`, {headers});
+    return this.http.get<any[]>(`https://railwaydev-production-df24.up.railway.app/urlapp/buyplan/viewplan/${userId}`, {headers});
   }
 
    generateShortUrl(originalUrl: string, userId: number, planid: number): Observable<any> {
@@ -49,6 +49,6 @@ export class GenerateShortUrlService {
   const headers = {
     Authorization: `Bearer ${token}`
   };
-    return this.http.get(`http://localhost:8080/urlapp/user/getAUser/${username}`,{headers});
+    return this.http.get(`https://railwaydev-production-df24.up.railway.app/urlapp/user/getAUser/${username}`,{headers});
   }
 }
