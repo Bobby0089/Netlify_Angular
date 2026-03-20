@@ -1,6 +1,7 @@
 [build]
-  command = "npm run build -- --configuration production"
-  publish = "dist/url-shortener/browser"
+  publish = "dist/url-shortener"
+  command = "ng build"
+  
 
 [[redirects]]
   from = "/*"
